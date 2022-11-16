@@ -13,6 +13,10 @@
 		14B9AC4B291ED51F005E93E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14B9AC49291ED51F005E93E3 /* Main.storyboard */; };
 		14B9AC4D291ED524005E93E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14B9AC4C291ED524005E93E3 /* Assets.xcassets */; };
 		14B9AC50291ED524005E93E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14B9AC4E291ED524005E93E3 /* LaunchScreen.storyboard */; };
+		14B9AC58291F2687005E93E3 /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B9AC57291F2687005E93E3 /* MyTableViewCell.swift */; };
+		14B9AC5A291F28EE005E93E3 /* PeopleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B9AC59291F28EE005E93E3 /* PeopleModel.swift */; };
+		14B9AC5C29207FD7005E93E3 /* PlanetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B9AC5B29207FD7005E93E3 /* PlanetModel.swift */; };
+		14B9AC5E292319A1005E93E3 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B9AC5D292319A1005E93E3 /* DetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		14B9AC4C291ED524005E93E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		14B9AC4F291ED524005E93E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		14B9AC51291ED524005E93E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14B9AC57291F2687005E93E3 /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
+		14B9AC59291F28EE005E93E3 /* PeopleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleModel.swift; sourceTree = "<group>"; };
+		14B9AC5B29207FD7005E93E3 /* PlanetModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetModel.swift; sourceTree = "<group>"; };
+		14B9AC5D292319A1005E93E3 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +66,41 @@
 			children = (
 				14B9AC43291ED51F005E93E3 /* AppDelegate.swift */,
 				14B9AC45291ED51F005E93E3 /* SceneDelegate.swift */,
-				14B9AC47291ED51F005E93E3 /* ViewController.swift */,
-				14B9AC49291ED51F005E93E3 /* Main.storyboard */,
+				14B9AC7F29246DEA005E93E3 /* controllers */,
+				14B9AC8029246E0F005E93E3 /* models */,
+				14B9AC8129246E29005E93E3 /* views */,
 				14B9AC4C291ED524005E93E3 /* Assets.xcassets */,
 				14B9AC4E291ED524005E93E3 /* LaunchScreen.storyboard */,
 				14B9AC51291ED524005E93E3 /* Info.plist */,
 			);
 			path = starWarApi;
+			sourceTree = "<group>";
+		};
+		14B9AC7F29246DEA005E93E3 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				14B9AC47291ED51F005E93E3 /* ViewController.swift */,
+				14B9AC5D292319A1005E93E3 /* DetailsViewController.swift */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		14B9AC8029246E0F005E93E3 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				14B9AC5B29207FD7005E93E3 /* PlanetModel.swift */,
+				14B9AC59291F28EE005E93E3 /* PeopleModel.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		14B9AC8129246E29005E93E3 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				14B9AC49291ED51F005E93E3 /* Main.storyboard */,
+				14B9AC57291F2687005E93E3 /* MyTableViewCell.swift */,
+			);
+			path = views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +174,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14B9AC5A291F28EE005E93E3 /* PeopleModel.swift in Sources */,
 				14B9AC48291ED51F005E93E3 /* ViewController.swift in Sources */,
+				14B9AC58291F2687005E93E3 /* MyTableViewCell.swift in Sources */,
 				14B9AC44291ED51F005E93E3 /* AppDelegate.swift in Sources */,
+				14B9AC5E292319A1005E93E3 /* DetailsViewController.swift in Sources */,
 				14B9AC46291ED51F005E93E3 /* SceneDelegate.swift in Sources */,
+				14B9AC5C29207FD7005E93E3 /* PlanetModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
